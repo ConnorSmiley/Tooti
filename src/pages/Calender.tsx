@@ -5,7 +5,7 @@ export interface IcalenderProps {
 
 }
 
-const calender: React.FC<IcalenderProps> = () => {
+const Calender: React.FC<IcalenderProps> = () => {
 
     return(
        <>
@@ -13,4 +13,4 @@ const calender: React.FC<IcalenderProps> = () => {
     )
 }
 
-export default calender
+export default Calender
