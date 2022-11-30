@@ -1,7 +1,6 @@
 import { RecoilRoot } from "recoil";
 import { BrowserRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
-
 import "./styles.css";
 
 export default function App() {
@@ -12,7 +11,7 @@ export default function App() {
           <h1>Hello interviewer</h1>
           <h2>implement the following buttons</h2>
           <section className="space-x-1.5">
-            <button className="text-xl">
+            <button className="bg-red-500 text-3xl">
               <Link
                 className="btn m5 btn-ghost normal-case text-xl"
                 to="/calendar"
