@@ -2,7 +2,7 @@ import {RecoilRoot} from "recoil";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import "./styles.css";
 import Greeting from "./pages/greeting";
-import Calendar from "./pages/calender";
+import Calendar from "./pages/class";
 
 export default function App() {
     return (
