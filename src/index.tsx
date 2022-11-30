@@ -1,6 +1,5 @@
 import { StrictMode } from "react";
 import * as ReactDOMClient from "react-dom/client";
-import Recoil
 
 import App from "./App";
 
