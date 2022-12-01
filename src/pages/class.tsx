@@ -28,7 +28,6 @@ const Class: React.FC<ICalenderProps> = () => {
                 <div>
                    <Calendar />
                 </div>
-                <Availability />
             </aside>
 
             <body>

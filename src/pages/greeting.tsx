@@ -17,7 +17,7 @@ const Greeting: React.FC<IgreetingProps> = () => {
                        className="btn btn-ghost outline border-blue-500 text-3xl m-4 hover:bg-[#B1B2FF] cursor-pointer font-bold ">
                        <Link
                            className="btn btn-ghost normal-case text-xl flex items-center justify-center"
-                           to="/calendar"
+                           to="/class"
                        >
                            Book a class
                        </Link>
@@ -27,7 +27,7 @@ const Greeting: React.FC<IgreetingProps> = () => {
                    <button
                        className="bg-[#B1B2FF] btn btn-ghost outline border-blue-500 text-3xl m-4 hover:bg-[#56C795] cursor-pointer">
                        <Link className="btn btn-ghost normal-case text-xl flex items-center justify-center "
-                             to="/class">
+                             to="/calendar">
                            Start a class now (stretch goal)
                        </Link>
                    </button>
