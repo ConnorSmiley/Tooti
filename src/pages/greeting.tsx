@@ -14,7 +14,7 @@ const Greeting: React.FC<IgreetingProps> = () => {
                <h2>implement the following buttons</h2>
                <section className="space-x-1.5">
                    <button
-                       className="btn btn-ghost outline border-blue-500 rounded px-4 py-1 text-3xl m-4 hover:bg-[#B1B2FF] cursor-pointer font-bold ">
+                       className="btn btn-ghost outline border-blue-500 text-3xl m-4 hover:bg-[#B1B2FF] cursor-pointer font-bold ">
                        <Link
                            className="btn btn-ghost normal-case text-xl flex items-center justify-center"
                            to="/calendar"
@@ -25,8 +25,8 @@ const Greeting: React.FC<IgreetingProps> = () => {
 
                    <hr />
                    <button
-                       className="bg-[#B1B2FF] btn btn-ghost outline border-blue-500 rounded px-4 py-1 text-3xl m-4 hover:bg-[#56C795] cursor-pointer">
-                       <Link className="btn btn-ghost normal-case text-xl flex items-center justify-center m-2"
+                       className="bg-[#B1B2FF] btn btn-ghost outline border-blue-500 text-3xl m-4 hover:bg-[#56C795] cursor-pointer">
+                       <Link className="btn btn-ghost normal-case text-xl flex items-center justify-center "
                              to="/class">
                            Start a class now (stretch goal)
                        </Link>
