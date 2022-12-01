@@ -24,3 +24,32 @@ Continue working on the layout based on your best guesses. Try to make the page 
 
 1.c Stretch goal 2 - Start a class now
 Follow this instructions https://docs.daily.co/guides/products/call-object and create a page with a 1-to-1 video chat.
+
+
+
+
+
+
+
+
+
+
+Gray: #667085
+Purple: #B1B2FF
+Green: #56C795
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
