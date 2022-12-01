@@ -11,7 +11,7 @@ const Availability2: React.FC<Iavailability2Props> = () => {
 
     return (
         <>
-            <div className="text-gray-500 flex items-center text-xl font-semibold pl-6 w-full h-10 hover:cursor-pointer"
+            <div className="text-gray-500 flex items-center text-lg pt-4 pl-6 w-full h-10 hover:cursor-pointer"
                  onClick={() => setOpen(!open)}
             >
                 Availability
@@ -19,9 +19,6 @@ const Availability2: React.FC<Iavailability2Props> = () => {
             {open && (
                 <div className='w-full h-40'>
                     <AvailabilityInput />
-
-
-
                 </div>
             )}
         </>

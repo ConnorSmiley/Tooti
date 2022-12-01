@@ -1,15 +1,15 @@
 import React from "react";
-import CalenderBox from "../components/Calendar/CalenderBox";
+import CalenderBox from "./CalenderBox";
 
-export interface ITestCalendarProps {
+export interface ICalendarGridProps {
 
 }
 
-const TestCalendar: React.FC<ITestCalendarProps> = () => {
+const CalendarGrid: React.FC<ICalendarGridProps> = () => {
 
     return (
         <>
-            <body className="h-80 pt-4 text-sm text-gray-500">
+            <body className="h-auto pt-4 text-sm text-gray-500">
 
             <div className="grid w-auto h-auto ">
                 <div className="h-10 ">
@@ -86,4 +86,4 @@ const TestCalendar: React.FC<ITestCalendarProps> = () => {
     )
 }
 
-export default TestCalendar
+export default CalendarGrid
