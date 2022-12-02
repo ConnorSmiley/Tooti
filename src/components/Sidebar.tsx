@@ -9,13 +9,15 @@ export interface ISidebarProps {
 
 const Sidebar: React.FC<ISidebarProps> = () => {
 
-    return(
-       <>
-           <div className="left-0 w-80 bg-white h-full absolute">
-               <Calendar />
-               <AvailabilityComponent/>
-           </div>
-       </>
+    return (
+        <>
+            <div className="relative">
+                <div className="left-0 w-80 bg-white h-full absolute">
+                    <Calendar />
+                    <AvailabilityComponent />
+                </div>
+            </div>
+        </>
     )
 }
 

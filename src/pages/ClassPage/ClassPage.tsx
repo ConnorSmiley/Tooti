@@ -12,9 +12,8 @@ const ClassPage: React.FC<ICalenderProps> = () => {
     return (
         <>
             <Navbar />
-                <Sidebar />
-                <BodyClassPage />
-
+            <Sidebar />
+            <BodyClassPage />
         </>
     )
 }

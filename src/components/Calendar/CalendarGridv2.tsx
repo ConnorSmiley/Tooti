@@ -1,20 +1,36 @@
 import React from "react";
 
+// const createDates:any = () => {
+//     let dates: object[] = []
+//     for (let i = 1; i < 31; i++) {
+//         let date = {day : i}
+//         dates.push(date)
+//     }
+//
+//     return dates
+// }
+
+
+
+
+
 export interface ICalendarGridv2Props {
 
 }
 
 const CalendarGridv2: React.FC<ICalendarGridv2Props> = () => {
-    const dates = []
-    for (let i = 1; i < 31; i++) {
-        let date = i
-        dates.push(date)
+    function createDates() {
+        let dates = []
+        for (let i = 1; i < 31; i++){
+            let date = {day : i}
+            dates.push(date)
+        }
+        return dates
     }
-    console.log(dates)
 
-    return(
-       <>
-       </>
+    return (
+        <>
+        </>
     )
 }
 

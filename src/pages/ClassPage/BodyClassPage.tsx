@@ -10,10 +10,10 @@ const BodyClassPage: React.FC<IMainClassPageProps> = () => {
 
     return (
         <>
-            <body className="pr-4 w-full">
+            <div className="pr-8 w-full">
                 <TimeZone textBold="Time Zone" text="Japan/Korea time" />
                 <ScheduleComponent />
-            </body>
+            </div>
         </>
     )
 }

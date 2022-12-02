@@ -9,9 +9,9 @@ const NameOfClass: React.FC<ItextProps> = (props) => {
 
     return (
         <>
-            <text className="ml-3">
+            <div className="ml-3">
                 {props.title}
-            </text>
+            </div>
         </>
     )
 }

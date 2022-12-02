@@ -11,12 +11,12 @@ const TimeZone: React.FC<ITimeZoneProps> = (props) => {
         <>
             <div className="h-14 flex items-center justify-end">
                 <div className="flex items-center justify-end">
-                    <text className="text-gray-500 font-semibold pr-4">
+                    <div className="text-gray-500 font-semibold pr-4">
                         {props.textBold + ":"}
-                    </text>
-                    <text className="text-gray-500 pr-6">
+                    </div>
+                    <div className="text-gray-500 pr-6">
                         {props.text}
-                    </text>
+                    </div>
                     <div className="">
                         chevron
                     </div>
