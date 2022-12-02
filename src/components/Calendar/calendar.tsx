@@ -13,7 +13,6 @@ const Calendar: React.FC<ICalendarProps> = () => {
         <>
             <CalendarH1 />
             <CalendarH2 />
-            <CalendarGrid />
         </>
     )
 }

@@ -5,8 +5,8 @@ function Coloredcircles(props:any) {
 
     return(
         <>
-           <div className="absolute w-12 right-3">
-              <div className="h-5 w-5 rounded-full flex items-center right-3"
+           <div className="flex justify-end w-12 right-3">
+              <div className="h-5 w-5 rounded-full flex items-center mr-4"
                   style={{backgroundColor: `${props.color}`}}/>
            </div>
        </>

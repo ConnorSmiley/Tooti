@@ -1,12 +1,12 @@
 import React, {useState} from "react";
-import AvailabilityInput from "./availabilityInput"
+import AvailabilityInput from "./AvailabilityInput"
 
 
 export interface Iavailability2Props {
 
 }
 
-const Availability2: React.FC<Iavailability2Props> = () => {
+const AvailabilityComponent: React.FC<Iavailability2Props> = () => {
     const [open, setOpen] = useState(true)
 
     return (
@@ -17,11 +17,11 @@ const Availability2: React.FC<Iavailability2Props> = () => {
                 Availability
             </div>
             {open && (
-                <div className='w-full h-40'>
+                <div className='h-40'>
                     <AvailabilityInput />
                 </div>
             )}
         </>
     )
 }
-export default Availability2
+export default AvailabilityComponent
