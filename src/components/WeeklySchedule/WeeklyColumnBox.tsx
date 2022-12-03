@@ -4,7 +4,7 @@ export interface IWeekColumnBoxProps {
     time?:number | string
 }
 
-const WeekColumnBox: React.FC<IWeekColumnBoxProps> = (props) => {
+const WeeklyColumnBox: React.FC<IWeekColumnBoxProps> = (props) => {
     const k: any[] = []
 
     function boxmap() {
@@ -31,7 +31,7 @@ const WeekColumnBox: React.FC<IWeekColumnBoxProps> = (props) => {
 
 }
 
-export default WeekColumnBox
+export default WeeklyColumnBox
 
 
 // grid template columns and use a hashmap with ""

@@ -5,7 +5,7 @@ export interface IScheduleHeaderDatesProps {
     day: string | null
 }
 
-const ScheduleHeaderDates: React.FC<IScheduleHeaderDatesProps> = (props) => {
+const WeeklyHeaderComponent: React.FC<IScheduleHeaderDatesProps> = (props) => {
 
     return(
        <>
@@ -17,4 +17,4 @@ const ScheduleHeaderDates: React.FC<IScheduleHeaderDatesProps> = (props) => {
     )
 }
 
-export default ScheduleHeaderDates
+export default WeeklyHeaderComponent

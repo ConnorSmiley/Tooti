@@ -1,6 +1,6 @@
 import React from "react";
 import TimeZone from "../../components/TimeZone";
-import ScheduleComponent from "../../components/Schedule/ScheduleComponent";
+import WeeklyScheduleHeader from "../../components/WeeklySchedule/WeeklyScheduleHeader";
 
 export interface IMainClassPageProps {
 
@@ -12,7 +12,7 @@ const BodyClassPage: React.FC<IMainClassPageProps> = () => {
         <>
             <div className="pr-8 w-full bg-white">
                 <TimeZone textBold="Time Zone" text="Japan/Korea time" />
-                <ScheduleComponent />
+                <WeeklyScheduleHeader />
             </div>
         </>
     )
