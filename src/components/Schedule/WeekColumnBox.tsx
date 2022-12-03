@@ -8,10 +8,9 @@ const WeekColumnBox: React.FC<IWeekColumnBoxProps> = (props) => {
     const k: any[] = []
 
     function boxmap() {
-        for (let i = 0; i <= 31; i++) {
+        for (let i = 0; i <= 24; i++) {
             k.push(i)
         }
-        console.log(k)
         return k
     }
 
@@ -21,7 +20,7 @@ const WeekColumnBox: React.FC<IWeekColumnBoxProps> = (props) => {
             <div>
                 {boxmap().map(() => (
                     <div className="grid">
-                        <div className="border border-gray-500 h-16 w-auto">
+                        <div className="border border-gray-200 h-16 w-auto">
                         </div>
                     </div>
                 ))}

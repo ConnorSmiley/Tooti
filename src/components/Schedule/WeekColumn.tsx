@@ -1,5 +1,6 @@
 import React from "react";
 import WeekColumnBox from "./WeekColumnBox";
+import WeekColumnBoxNoBorder from "./WeekColumnBoxNoBorder";
 
 export interface IWeekColumnProps {
 }

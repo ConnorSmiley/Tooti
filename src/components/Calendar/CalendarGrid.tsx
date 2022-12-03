@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import CalenderBox from "./CalenderBox";
 
 export interface ICalendarGridProps {
@@ -6,11 +6,16 @@ export interface ICalendarGridProps {
 }
 
 const CalendarGrid: React.FC<ICalendarGridProps> = () => {
+    const [selected, setSelected] = useState(false)
+
+    function handleChange () {
+
+
+    }
 
     return (
         <>
             <body className="h-auto pt-2 text-sm text-gray-500">
-
             <div className="grid w-auto h-auto ">
                 <div className="h-10 ">
                     <div className="grid grid-cols-7">
