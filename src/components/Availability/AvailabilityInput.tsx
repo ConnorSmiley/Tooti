@@ -12,9 +12,9 @@ const AvailabilityInput: React.FC<IavailabilityInputProps> = (props) => {
 
     return (
         <>
-            <div className="pt-8 pl-2">
+            <div className="pt-8 pl-3">
                 <div className="flex items-center ">
-                    <div className="w-full h-10 flex items-center">
+                    <div className="w-full h-10 flex items-center ">
                         <RadioButton />
                         <NameOfClass title="View All" />
                     </div>

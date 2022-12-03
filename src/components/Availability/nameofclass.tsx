@@ -9,7 +9,7 @@ const NameOfClass: React.FC<ItextProps> = (props) => {
 
     return (
         <>
-            <div className="ml-3">
+            <div className="pl-4">
                 {props.title}
             </div>
         </>

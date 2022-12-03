@@ -11,7 +11,6 @@ import CalenderBox from "./CalenderBox";
 //     return dates
 // }
 
-
 export interface ICalendarGridv2Props {
 }
 
@@ -33,44 +32,27 @@ const CalendarGridv2: React.FC<ICalendarGridv2Props> = () => {
     const [prevClick, setPrevClick] = useState()
 
     function handleClick(rowIndex:number, colIndex:number) {
+
         const newGrid = [...selected]
 
-        newGrid[rowIndex][colIndex] = true
-        setSelected(newGrid)
+        if (grid[rowIndex][colIndex] !== null) {
+            newGrid[rowIndex][colIndex] = true
+            setSelected(newGrid)
+        } else if (null === selected) {
+           return
+        } else if (selected[rowIndex][colIndex] !== grid[rowIndex][colIndex]) {
 
-
-
+        }
 
     }
 
+    // function maybe((val:any) => {
+    //     for (var i = 0; i < grid.length; i++) {
+    //         for (var z = 0; z < grid[i].length; z++) {
+    //             if (grid[i][z] == selected) {
+    //                 return [...val, (val[i][z] = grid)];
+    // maybe()
 
-
-    // function newGrid(rowIndex:any, colIndex:any) {
-    //     const newGrid:any = [...grid]
-    //     newGrid[rowIndex][colIndex] = setSelected(true)
-    //     setGrid(newGrid)
-    // }
-
-    // const [prevSelected, setPrevSelected] = useState()
-    //
-    // function handleClicked(rowIndex: any, colIndex: any) {
-    //     // const clickedDate: any = grid[rowIndex][colIndex]
-    //     // const newGrid: any = [...selected]
-    //     const clickedDate = grid[rowIndex][colIndex]
-    //     const selectedDate = grid[rowIndex][colIndex]
-    //
-    //     if (clickedDate === selectedDate) {
-    //         return setSelected(true)
-    //     }
-    // }
-
-    // function update(rowIndex:any, colIndex:any) {
-    //     setSelected((prev:any) => {
-    //         const {grid} = prev
-    //         setSelected[rowIndex][colIndex] = true
-    //         return {...prev, grid}
-    //     })
-    // }
 
     return (
         <>
@@ -78,13 +60,13 @@ const CalendarGridv2: React.FC<ICalendarGridv2Props> = () => {
                 {grid.map((row, rowIndex: any) => (
                     <div key={rowIndex} className="flex">
                         {row.map((day, colIndex: any) => (
-                            <div key={colIndex} className="w-10 h-10" onClick={() => handleClick(rowIndex, colIndex)}>
+                            <div key={colIndex} className="w-10 h-10 flex justify-center items-center " onClick={() => handleClick(rowIndex, colIndex)}>
                                 {selected[rowIndex][colIndex] ?
                                     <div className="">
-                                        <div className="h-10 w-10 bg-red-500 text-black">{day}</div>
+                                        <div className="h-10 w-10 bg-red-500 text-black flex items-center justify-center">{day}</div>
                                     </div>
                                     :
-                                    <div className="bg-green-500">{day}</div>}
+                                    <div className="bg-green-500 flex justify-center items-center w-full h-full">{day}</div>}
                             </div>
                         ))}
                     </div>
@@ -95,3 +77,32 @@ const CalendarGridv2: React.FC<ICalendarGridv2Props> = () => {
     )
 }
 export default CalendarGridv2
+
+
+
+// function newGrid(rowIndex:any, colIndex:any) {
+//     const newGrid:any = [...grid]
+//     newGrid[rowIndex][colIndex] = setSelected(true)
+//     setGrid(newGrid)
+// }
+
+// const [prevSelected, setPrevSelected] = useState()
+//
+// function handleClicked(rowIndex: any, colIndex: any) {
+//     // const clickedDate: any = grid[rowIndex][colIndex]
+//     // const newGrid: any = [...selected]
+//     const clickedDate = grid[rowIndex][colIndex]
+//     const selectedDate = grid[rowIndex][colIndex]
+//
+//     if (clickedDate === selectedDate) {
+//         return setSelected(true)
+//     }
+// }
+
+// function update(rowIndex:any, colIndex:any) {
+//     setSelected((prev:any) => {
+//         const {grid} = prev
+//         setSelected[rowIndex][colIndex] = true
+//         return {...prev, grid}
+//     })
+// }
