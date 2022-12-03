@@ -9,9 +9,9 @@ const WeeklyHeaderComponent: React.FC<IScheduleHeaderDatesProps> = (props) => {
 
     return(
        <>
-           <div className="flex flex-col items-center justify-center w-full pb-2 ">
-               <text className="text-lg pb-1">{props.day}</text>
-               <text className="text-sm">{props.date}</text>
+           <div className="flex flex-col items-center justify-center w-full mb-4">
+               <text className="text-xl pb-1">{props.day}</text>
+               <text className="text-md ">{props.date}</text>
            </div>
        </>
     )

@@ -10,7 +10,7 @@ const WeeklyScheduleHeader: React.FC<IScheduleComponentProps> = () => {
 
     return (
         <>
-            <div className="pl-80 w-full pt-4">
+            <div className="pl-80 w-full">
                 <div className="grid h-16 ml-8 mr-4">
                     <div className="flex flex-1 justify-evenly ">
                         <div className="w-80">
