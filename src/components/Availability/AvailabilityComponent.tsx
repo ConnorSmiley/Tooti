@@ -17,7 +17,7 @@ const AvailabilityComponent: React.FC<Iavailability2Props> = () => {
                 Availability
             </div>
             {open && (
-                <div className='h-40'>
+                <div className='h-40 font-medium'>
                     <AvailabilityInput />
                 </div>
             )}

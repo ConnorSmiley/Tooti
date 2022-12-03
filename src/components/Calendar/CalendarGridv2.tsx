@@ -31,7 +31,7 @@ const CalendarGridv2: React.FC<ICalendarGridv2Props> = () => {
 
     const [prevClick, setPrevClick] = useState()
 
-    function handleClick(rowIndex:number, colIndex:number) {
+    function handleClick(rowIndex: number, colIndex: number) {
 
         const newGrid = [...selected]
 
@@ -39,9 +39,8 @@ const CalendarGridv2: React.FC<ICalendarGridv2Props> = () => {
             newGrid[rowIndex][colIndex] = true
             setSelected(newGrid)
         } else if (null === selected) {
-           return
+            return
         } else if (selected[rowIndex][colIndex] !== grid[rowIndex][colIndex]) {
-
         }
 
     }
@@ -60,13 +59,16 @@ const CalendarGridv2: React.FC<ICalendarGridv2Props> = () => {
                 {grid.map((row, rowIndex: any) => (
                     <div key={rowIndex} className="flex">
                         {row.map((day, colIndex: any) => (
-                            <div key={colIndex} className="w-10 h-10 flex justify-center items-center " onClick={() => handleClick(rowIndex, colIndex)}>
+                            <div key={colIndex} className="w-10 h-10 flex justify-center items-center "
+                                 onClick={() => handleClick(rowIndex, colIndex)}>
                                 {selected[rowIndex][colIndex] ?
                                     <div className="">
-                                        <div className="h-10 w-10 bg-red-500 text-black flex items-center justify-center">{day}</div>
+                                        <div
+                                            className="h-10 w-10 bg-red-500 text-black flex items-center justify-center">{day}</div>
                                     </div>
                                     :
-                                    <div className="bg-green-500 flex justify-center items-center w-full h-full">{day}</div>}
+                                    <div
+                                        className="bg-green-500 flex justify-center items-center w-full h-full">{day}</div>}
                             </div>
                         ))}
                     </div>
@@ -77,7 +79,6 @@ const CalendarGridv2: React.FC<ICalendarGridv2Props> = () => {
     )
 }
 export default CalendarGridv2
-
 
 
 // function newGrid(rowIndex:any, colIndex:any) {

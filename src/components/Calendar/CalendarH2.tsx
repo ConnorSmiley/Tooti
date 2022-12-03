@@ -12,7 +12,7 @@ const CalendarH2: React.FC<ICalendarH2Props> = () => {
     let showMonth = month[getMonth.getMonth()-4]
 
     const getDay = new Date();
-    let showDay = getDay.getDay()
+    let showDay = getDay.getDay()+1
 
     const year = new Date();
     let getYear = year.getFullYear()+1
@@ -21,9 +21,9 @@ const CalendarH2: React.FC<ICalendarH2Props> = () => {
     return(
        <>
            <div>
-               <div className="text-sm text-gray-500 flex items-center justify-between pl-6 pb-2">
+               <div className="font-thin text-md text-gray-500 flex items-center justify-between pl-8 pb-2">
                    {showMonth} {showDay}, {getYear}
-                   <div className="border border-[#56C795] text-md text-[#56C795] rounded-xl px-4 py-3">
+                   <div className="font-thin border border-[#56C795] text-lg text-[#56C795] rounded-xl px-6 py-2">
                        Today
                    </div>
 
