@@ -8,7 +8,7 @@ export interface Iavailability2Props {
 }
 
 const AvailabilityComponent: React.FC<Iavailability2Props> = () => {
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState<boolean>(true)
 
     return (
         <>
@@ -18,7 +18,6 @@ const AvailabilityComponent: React.FC<Iavailability2Props> = () => {
             >
                 Availability
                 <div className="w-auto flex pt-3">
-
                     {open ?
                         <div className="pb-5 -mr-3 ">
                             <ChevronDown />

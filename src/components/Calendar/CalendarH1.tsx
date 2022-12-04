@@ -8,7 +8,7 @@ export interface ICalendarH1Props {
 
 const CalendarH1: React.FC<ICalendarH1Props> = () => {
 
-    const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    const month:string[] = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
     const getMonth = new Date();
     let showMonth = month[getMonth.getMonth() - 4]

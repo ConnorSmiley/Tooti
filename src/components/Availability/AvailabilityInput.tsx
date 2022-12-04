@@ -5,7 +5,6 @@ import ThreeDots from "./threeDots";
 import Coloredcircles from "./coloredcircles";
 
 export interface IavailabilityInputProps {
-
 }
 
 const AvailabilityInput: React.FC<IavailabilityInputProps> = (props) => {

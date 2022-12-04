@@ -1,6 +1,7 @@
 import React from "react";
 
 
+//Didn't know how to type-define a `${TUPLE}}`
 function Coloredcircles(props:any) {
 
     return(
@@ -14,3 +15,5 @@ function Coloredcircles(props:any) {
 }
 
 export default Coloredcircles
+
+

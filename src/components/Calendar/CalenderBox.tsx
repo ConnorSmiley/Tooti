@@ -4,7 +4,7 @@ export interface ICalenderBoxProps {
     value:string|number
 }
 
-const CalenderBox: React.FC<ICalenderBoxProps> = (props:any) => {
+const CalenderBox: React.FC<ICalenderBoxProps> = (props) => {
 
     return(
        <>

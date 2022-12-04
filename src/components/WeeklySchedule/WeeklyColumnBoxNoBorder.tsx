@@ -143,6 +143,3 @@ const WeeklyColumnBoxNoBorder: React.FC<IWeekColumnBoxProps> = (props) => {
 export default WeeklyColumnBoxNoBorder
 
 
-// grid template columns and use a hashmap with ""
-
-// repeat(9, 1fr)

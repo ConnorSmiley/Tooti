@@ -1,22 +1,20 @@
 import React from "react";
-import Button from "../Button";
 
 export interface ICalendarH2Props {
 
 }
 
 const CalendarH2: React.FC<ICalendarH2Props> = () => {
-    const month = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July","Aug", "Sept", "Oct", "Nov", "Dec"]
+    const month:string[] = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July","Aug", "Sept", "Oct", "Nov", "Dec"]
 
     const getMonth = new Date();
     let showMonth = month[getMonth.getMonth()-4]
 
     const getDay = new Date();
-    let showDay = getDay.getDay()+1
+    let showDay = getDay.getDay()+23
 
     const year = new Date();
     let getYear = year.getFullYear()+1
-
 
     return(
        <>

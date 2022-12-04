@@ -6,7 +6,7 @@ export interface IMainClassPageProps {
 
 }
 
-const BodyClassPage: React.FC<IMainClassPageProps> = () => {
+const ClassPageBody: React.FC<IMainClassPageProps> = () => {
 
     return (
         <>
@@ -18,4 +18,4 @@ const BodyClassPage: React.FC<IMainClassPageProps> = () => {
     )
 }
 
-export default BodyClassPage
+export default ClassPageBody
