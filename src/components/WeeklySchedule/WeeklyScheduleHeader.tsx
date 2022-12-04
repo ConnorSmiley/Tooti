@@ -1,5 +1,5 @@
 import React from "react";
-import TimeTable from "../../pages/ClassPage/TimeTable";
+import ClassScheduleTable from "../../pages/ClassPage/ClassScheduleTable";
 import WeeklyHeaderComponent from "./WeeklyHeaderComponent";
 import WeeklyHeaderComponentColoredCircle from "./WeeklyHeaderComponentColoredCircle";
 
@@ -28,7 +28,7 @@ const WeeklyScheduleHeader: React.FC<IScheduleComponentProps> = () => {
                         <WeeklyHeaderComponent day="Sat" date={26} />
                     </div>
                 </div>
-                <TimeTable />
+                <ClassScheduleTable />
             </div>
         </>
     )

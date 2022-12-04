@@ -5,7 +5,7 @@ export interface ITimeTableProps {
 
 }
 
-const TimeTable: React.FC<ITimeTableProps> = () => {
+const ClassScheduleTable: React.FC<ITimeTableProps> = () => {
 
     return (
         <>
@@ -16,4 +16,4 @@ const TimeTable: React.FC<ITimeTableProps> = () => {
     )
 }
 
-export default TimeTable
+export default ClassScheduleTable

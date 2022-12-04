@@ -1,7 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-
 export interface IgreetingProps {
 
 }
@@ -14,9 +13,9 @@ const Greeting: React.FC<IgreetingProps> = () => {
                <h2>implement the following buttons</h2>
                <section className="space-x-1.5">
                    <button
-                       className="btn btn-ghost outline border-blue-500 text-3xl m-4 hover:bg-[#B1B2FF] cursor-pointer font-bold ">
+                       className="bg-[#56C795] rounded-md border-blue-500 text-3xl m-4 cursor-pointer font-bold ">
                        <Link
-                           className="btn btn-ghost normal-case text-xl flex items-center justify-center"
+                           className="hover:bg-pink-500 w-full h-full text-black btn btn-ghost normal-case text-xl flex items-center justify-center"
                            to="/class"
                        >
                            Book a class
@@ -25,8 +24,8 @@ const Greeting: React.FC<IgreetingProps> = () => {
 
                    <hr />
                    <button
-                       className="bg-[#B1B2FF] btn btn-ghost outline border-blue-500 text-3xl m-4 hover:bg-[#56C795] cursor-pointer">
-                       <Link className="btn btn-ghost normal-case text-xl flex items-center justify-center "
+                       className="bg-[#B1B2FF] w-96 h-16 text-2xl text-black m-4 font-bold rounded-md cursor-pointer hover:bg-pink-500">
+                       <Link className="normal-case flex items-center justify-center "
                              to="/calendar">
                            Start a class now (stretch goal)
                        </Link>
@@ -42,7 +41,6 @@ const Greeting: React.FC<IgreetingProps> = () => {
                    </ul>
                </section>
            </div>
-
 
        </>
     )

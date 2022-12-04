@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/navbar";
 import Sidebar from "../../components/Sidebar";
-import ClassPageBody from "./ClassPageBody";
+import ClassBody from "./ClassBody";
 
 
 export interface ICalenderProps {
@@ -14,7 +14,7 @@ const ClassPage: React.FC<ICalenderProps> = () => {
             <div className="bg-white h-screen">
                 <Navbar />
                 <Sidebar />
-                <ClassPageBody />
+                <ClassBody />
             </div>
         </>
     )
