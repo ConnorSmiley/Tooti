@@ -1,15 +1,4 @@
-import React, {useState, useEffect} from "react";
-import CalenderBox from "./CalenderBox";
-
-// const createDates:any = () => {
-//     let dates: object[] = []
-//     for (let i = 1; i < 31; i++) {
-//         let date = {day : i}
-//         dates.push(date)
-//     }
-//
-//     return dates
-// }
+import React, {useState} from "react";
 
 export interface ICalendarGridv2Props {
 }
@@ -31,26 +20,15 @@ const CalendarGridv2: React.FC<ICalendarGridv2Props> = () => {
 
     function handleClick(rowIndex: number, colIndex: number) {
 
-        // const newGrid = [...selected]
         const newGrid = new Array(grid.length).fill("")
             .map(() => new Array(grid[0].length).fill(false))
 
         if (grid[rowIndex][colIndex] !== null) {
             newGrid[rowIndex][colIndex] = true
-            // } else if (null === selected) {
-            //     return
         }
 
         setSelected(newGrid)
     }
-
-    // function maybe((val:any) => {
-    //     for (var i = 0; i < grid.length; i++) {
-    //         for (var z = 0; z < grid[i].length; z++) {
-    //             if (grid[i][z] == selected) {
-    //                 return [...val, (val[i][z] = grid)];
-    // maybe()
-
 
     return (
         <>
@@ -58,16 +36,16 @@ const CalendarGridv2: React.FC<ICalendarGridv2Props> = () => {
                 {grid.map((row, rowIndex: any) => (
                     <div key={rowIndex} className="flex">
                         {row.map((day, colIndex: any) => (
-                            <div key={colIndex} className="w-10 h-10 flex justify-center items-center "
+                            <div key={colIndex} className="w-12 h-12 flex justify-center items-center "
                                  onClick={() => handleClick(rowIndex, colIndex)}>
                                 {selected[rowIndex][colIndex] ?
                                     <div className="">
                                         <div
-                                            className="h-10 w-10 bg-red-500 text-black flex items-center justify-center">{day}</div>
+                                            className="text-sm h-10 w-10 bg-[#56C795] flex items-center justify-center rounded-full font-thin text-white">{day}</div>
                                     </div>
                                     :
                                     <div
-                                        className="bg-green-500 flex justify-center items-center w-full h-full">{day}</div>}
+                                        className="text-sm font-thin text-gray-500 flex justify-center items-center w-full h-full">{day}</div>}
                             </div>
                         ))}
                     </div>
@@ -78,31 +56,3 @@ const CalendarGridv2: React.FC<ICalendarGridv2Props> = () => {
     )
 }
 export default CalendarGridv2
-
-
-// function newGrid(rowIndex:any, colIndex:any) {
-//     const newGrid:any = [...grid]
-//     newGrid[rowIndex][colIndex] = setSelected(true)
-//     setGrid(newGrid)
-// }
-
-// const [prevSelected, setPrevSelected] = useState()
-//
-// function handleClicked(rowIndex: any, colIndex: any) {
-//     // const clickedDate: any = grid[rowIndex][colIndex]
-//     // const newGrid: any = [...selected]
-//     const clickedDate = grid[rowIndex][colIndex]
-//     const selectedDate = grid[rowIndex][colIndex]
-//
-//     if (clickedDate === selectedDate) {
-//         return setSelected(true)
-//     }
-// }
-
-// function update(rowIndex:any, colIndex:any) {
-//     setSelected((prev:any) => {
-//         const {grid} = prev
-//         setSelected[rowIndex][colIndex] = true
-//         return {...prev, grid}
-//     })
-// }

@@ -1,5 +1,6 @@
 import React from "react";
-
+import AddSz18 from "../../icons/ChevronDown";
+import {ReactComponent as ChreRight} from "../icons/chevron-down-sm.svg";
 
 export interface ICalendarH1Props {
 
@@ -21,6 +22,9 @@ const CalendarH1: React.FC<ICalendarH1Props> = () => {
                <div className=" ">
                    {showMonth} {getYear}
                </div>
+               <AddSz18 />
+               <ChreRight />
+
            </div>
        </>
     )

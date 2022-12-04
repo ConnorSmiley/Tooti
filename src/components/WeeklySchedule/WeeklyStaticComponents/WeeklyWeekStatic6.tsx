@@ -70,62 +70,46 @@ const WeeklyWeekStatic1: React.FC<IWeeklyWeekStaticProps> = (props) => {
 
                 </div>
 
-                <div title="0900" className="flex flex-col border border-gray-500 h-16">
+                <div title="0900" className="flex flex-col border border-gray-500 h-16 bg-[#56C795]">
                     <div title="0930" className=" w-full h-8 flex items-center justify-center -mb-2">
                         {/*{props.name}*/}
                     </div>
 
                 </div>
 
-                <div title="1000" className="flex justify-center items-center border border-gray-500 h-16">
-                    <div title="1030" className="flex flex-col items-center justify-center rounded-md w-full h-full flex items-center justify-center text-white bg-[#B1B2FF]">
-                        <div className="text-[12px] pb-1">
-                        International Meet...
-                        </div>
-                        <div className="text-[10px]">
-                            10:00am w/ James
-                        </div>
-
+                <div title="1000" className="flex flex-col border border-gray-500 h-16 bg-[#56C795]">
+                    <div title="1030" className=" w-full h-8 flex items-center justify-center -mb-2">
+                        {/*{props.name}*/}
                     </div>
 
                 </div>
-                <div title="1100" className="flex justify-center items-center border border-gray-500 h-16">
-                    <div title="1130" className="flex flex-col items-center justify-center rounded-md w-full h-full flex items-center justify-center text-white bg-[#B1B2FF]">
-                        <div className="text-[12px] pb-1">
-                            Presentation 01
-                        </div>
-                        <div className="text-[10px]">
-                            11:00am w/ Mary
-                        </div>
-
+                <div title="1100" className="flex flex-col border border-gray-500 h-16 bg-[#56C795]">
+                    <div title="1130" className=" w-full h-8 flex items-center justify-center -mb-2">
+                        {/*{props.name}*/}
                     </div>
 
                 </div>
-                <div title="1200" className="flex flex-col border border-gray-500 h-16">
+                <div title="1200" className="flex flex-col border border-gray-500 h-16  bg-[#56C795]">
                     <div title="1230" className=" w-full h-8 flex items-center justify-center -mb-2">
                         {/*{props.name}*/}
                     </div>
 
                 </div>
-                <div title="1300" className="flex justify-center items-center border border-gray-500 h-16">
-                    <div title="1330" className="flex flex-col items-center justify-center rounded-md w-full h-full flex items-center justify-center text-white bg-[#B1B2FF]">
-                        <div className="text-[12px] pb-1">
-                           21 Century Com...
-                        </div>
-                        <div className="text-[10px]">
-                            13:00am w/John
-                        </div>
 
-                    </div>
-                </div>
-                <div title="1400" className="flex flex-col border border-gray-500 h-16">
-                    <div title="1430" className=" w-full h-8 flex items-center justify-center -mb-2">
+                <div title="1000" className="flex flex-col border border-gray-500 h-16">
+                    <div title="1030" className=" w-full h-8 flex items-center justify-center -mb-2">
                         {/*{props.name}*/}
                     </div>
 
                 </div>
-                <div title="1500" className="flex flex-col justify-center items-center border border-gray-500 h-16">
-                    <div title="1530" className="flex flex-col items-center justify-center rounded-md w-full h-8 flex  text-white bg-white">
+                <div title="1100" className="flex flex-col border border-gray-500 h-16">
+                    <div title="1130" className=" w-full h-8 flex items-center justify-center -mb-2">
+                        {/*{props.name}*/}
+                    </div>
+
+                </div>
+                <div title="1200" className="flex flex-col justify-center items-center border border-gray-500 h-16">
+                    <div title="1230" className="flex flex-col items-center justify-center rounded-md w-full h-8 flex  text-white bg-white">
                         <div className="text-[12px] pb-1">
                         </div>
                         <div className="text-[10px]">
@@ -135,24 +119,33 @@ const WeeklyWeekStatic1: React.FC<IWeeklyWeekStaticProps> = (props) => {
                         <div className="text-[12px] pb-1">
                         </div>
                         <div className="text-[10px]">
-                            International Meet
+                            Greetings, 15:30
                         </div>
                     </div>
                 </div>
-                <div title="1600" className="flex flex-col justify-center items-center border border-gray-500 h-16">
-                    <div title="1630" className="flex flex-col items-center justify-center rounded-md w-full h-8 flex  text-white bg-[#B1B2FF]">
-                        <div className="text-[12px] pb-1">
-                        </div>
-                        <div className="text-[10px]">
-                            The Popularity of...
-                        </div>
+                <div title="1300" className="flex flex-col border border-gray-500 h-16">
+                    <div title="1330" className=" w-full h-8 flex items-center justify-center -mb-2">
+                        {/*{props.name}*/}
                     </div>
-                    <div title="1530" className="flex flex-col items-center justify-center rounded-md w-full h-8 flex  text-white bg-white">
-                        <div className="text-[12px] pb-1">
-                        </div>
-                        <div className="text-[10px]">
-                        </div>
+
+                </div>
+                <div title="1400" className="flex flex-col border border-gray-500 h-16">
+                    <div title="1430" className=" w-full h-8 flex items-center justify-center -mb-2">
+                        {/*{props.name}*/}
                     </div>
+
+                </div>
+                <div title="1500" className="flex flex-col border border-gray-500 h-16">
+                    <div title="1530" className=" w-full h-8 flex items-center justify-center -mb-2">
+                        {/*{props.name}*/}
+                    </div>
+
+                </div>
+                <div title="1600" className="flex flex-col border border-gray-500 h-16">
+                    <div title="1630" className=" w-full h-8 flex items-center justify-center -mb-2">
+                        {/*{props.name}*/}
+                    </div>
+
                 </div>
                 <div title="1700" className="flex flex-col border border-gray-500 h-16">
                     <div title="1730" className=" w-full h-8 flex items-center justify-center -mb-2">

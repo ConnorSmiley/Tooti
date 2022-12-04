@@ -1,8 +1,6 @@
 import React from "react";
 import Calendar from "./Calendar/calendar";
 import AvailabilityComponent from "./Availability/AvailabilityComponent";
-import TestCalendar from "../__test__/TestCalendar";
-import CalendarGrid from "./Calendar/CalendarGrid";
 
 export interface ISidebarProps {
 

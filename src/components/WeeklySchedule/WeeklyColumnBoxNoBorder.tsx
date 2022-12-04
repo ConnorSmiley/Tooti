@@ -8,7 +8,7 @@ const WeeklyColumnBoxNoBorder: React.FC<IWeekColumnBoxProps> = (props) => {
 
     return (
         <>
-            <div className="text-sm pl-8 -mt-2 pr-6">
+            <div className="text-gray-500 text-sm pl-8 -mt-2 pr-6">
                 <div className="grid ">
                     <div className="h-16 w-auto  ">
                         00:00
