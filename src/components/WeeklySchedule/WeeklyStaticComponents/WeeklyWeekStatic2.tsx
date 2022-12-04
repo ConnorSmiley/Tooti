@@ -77,9 +77,9 @@ const WeeklyWeekStatic1: React.FC<IWeeklyWeekStaticProps> = (props) => {
 
                 </div>
 
-                <div title="1000" className="flex justify-center items-center border border-gray-500 h-16">
-                    <div title="1030" className="flex flex-col items-center justify-center rounded-md w-full h-full flex items-center justify-center text-white bg-[#B1B2FF]">
-                        <div className="text-[12px] pb-1">
+                <div title="1000" className="flex justify-center justify-center items-center border border-gray-500 h-16">
+                    <div title="1030" className="flex flex-col items-center justify-center rounded-md w-full h-full text-white bg-[#B1B2FF]">
+                        <div className="flex justify-center items-center text-[11px] pb-1">
                         International Meet...
                         </div>
                         <div className="text-[10px]">
@@ -131,10 +131,10 @@ const WeeklyWeekStatic1: React.FC<IWeeklyWeekStaticProps> = (props) => {
                         <div className="text-[10px]">
                         </div>
                     </div>
-                    <div title="1530" className="flex flex-col items-center justify-center rounded-md w-full h-8 flex  text-white bg-[#B1B2FF]">
+                    <div title="1530" className="flex flex-col items-center justify-center rounded-md w-full h-8 text-white bg-[#B1B2FF]">
                         <div className="text-[12px] pb-1">
                         </div>
-                        <div className="text-[10px]">
+                        <div className="flex justify-center items-center text-[10px]">
                             International Meet
                         </div>
                     </div>

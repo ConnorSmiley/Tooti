@@ -1,4 +1,5 @@
 import React from "react";
+import ChevronDown from "../icons/ChevronD";
 
 export interface ITimeZoneProps {
     textBold: string
@@ -17,8 +18,8 @@ const TimeZone: React.FC<ITimeZoneProps> = (props) => {
                     <div className="font-thin text-gray-500 pr-6">
                         {props.text}
                     </div>
-                    <div className="">
-                        chevron
+                    <div className="flex pb-3">
+                        <ChevronDown />
                     </div>
                 </div>
             </div>

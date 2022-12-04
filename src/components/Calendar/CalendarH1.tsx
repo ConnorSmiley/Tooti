@@ -1,6 +1,6 @@
 import React from "react";
-import AddSz18 from "../../icons/ChevronDown";
-import {ReactComponent as ChreRight} from "../icons/chevron-down-sm.svg";
+import ChrevonLeft from "../../icons/ChevronLeft";
+import ChrevonRight from "../../icons/ChevronRight";
 
 export interface ICalendarH1Props {
 
@@ -8,25 +8,30 @@ export interface ICalendarH1Props {
 
 const CalendarH1: React.FC<ICalendarH1Props> = () => {
 
-    const month = ["January", "February", "March", "April", "May", "June", "July","August", "September", "October", "November", "December"]
+    const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
     const getMonth = new Date();
-    let showMonth = month[getMonth.getMonth()-4]
+    let showMonth = month[getMonth.getMonth() - 4]
 
     const year = new Date();
-    let getYear = year.getFullYear()+1
+    let getYear = year.getFullYear() + 1
 
-    return(
-       <>
-           <div className="h-16 flex items-center justify-center text-lg text-gray-500">
-               <div className=" ">
-                   {showMonth} {getYear}
-               </div>
-               <AddSz18 />
-               <ChreRight />
-
-           </div>
-       </>
+    return (
+        <>
+            <div className="h-16 w-full flex flex-row items-center justify-center text-lg text-gray-500 ">
+                <div className="flex w-60 flex-row items-center justify-between">
+                    <div className=" pt-1 flex">
+                        <ChrevonLeft />
+                    </div>
+                    <div className="flex pb-1 ">
+                        {showMonth} {getYear}
+                    </div>
+                    <div className="flex pb-3">
+                        <ChrevonRight />
+                    </div>
+                </div>
+            </div>
+        </>
     )
 }
 
