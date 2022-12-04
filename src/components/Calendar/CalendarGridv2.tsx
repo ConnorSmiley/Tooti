@@ -34,13 +34,20 @@ const CalendarGridv2: React.FC<ICalendarGridv2Props> = () => {
     function handleClick(rowIndex: number, colIndex: number) {
 
         const newGrid = [...selected]
+        useEffect(() => {
+        setSelected(new Array(grid.length)
+            .fill("")
+            .map(() => new Array(grid[0].length).fill(false)))
+        }, [setSelected])
+
+        console.log(setSelected)
 
         if (grid[rowIndex][colIndex] !== null) {
             newGrid[rowIndex][colIndex] = true
-            setSelected(newGrid)
         } else if (null === selected) {
             return
         } else if (selected[rowIndex][colIndex] !== grid[rowIndex][colIndex]) {
+
         }
 
     }
