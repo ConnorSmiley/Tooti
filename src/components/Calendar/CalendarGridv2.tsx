@@ -29,27 +29,19 @@ const CalendarGridv2: React.FC<ICalendarGridv2Props> = () => {
             .map(() => new Array(grid[0].length).fill(false))
     )
 
-    const [prevClick, setPrevClick] = useState()
-
     function handleClick(rowIndex: number, colIndex: number) {
 
-        const newGrid = [...selected]
-        useEffect(() => {
-        setSelected(new Array(grid.length)
-            .fill("")
-            .map(() => new Array(grid[0].length).fill(false)))
-        }, [setSelected])
-
-        console.log(setSelected)
+        // const newGrid = [...selected]
+        const newGrid = new Array(grid.length).fill("")
+            .map(() => new Array(grid[0].length).fill(false))
 
         if (grid[rowIndex][colIndex] !== null) {
             newGrid[rowIndex][colIndex] = true
-        } else if (null === selected) {
-            return
-        } else if (selected[rowIndex][colIndex] !== grid[rowIndex][colIndex]) {
-
+            // } else if (null === selected) {
+            //     return
         }
 
+        setSelected(newGrid)
     }
 
     // function maybe((val:any) => {

@@ -10,15 +10,13 @@ const WeeklyColumnComponent: React.FC<IFullDayComponentProps> = () => {
 
     return (
         <>
-            <div className="flex flex-1 justify-between h-[44rem] overflow-y-scroll pl-12 mt-3 mb-4">
-                <WeeklyColumnBoxNoBorder />
-                <WeeklyColumn />
-                <WeeklyColumn />
-                <WeeklyColumn />
-                <WeeklyColumn />
-                <WeeklyColumn />
-                <WeeklyColumn />
-                <WeeklyColumn />
+            <div className="flex flex-1 justify-between h-[32rem] overflow-y-scroll pl-12 mt-3 mb-4">
+                <div>
+                    <WeeklyColumnBoxNoBorder />
+                </div>
+                <div className="flex flew-col w-full h-full">
+                    <WeeklyColumn />
+                </div>
             </div>
 
         </>

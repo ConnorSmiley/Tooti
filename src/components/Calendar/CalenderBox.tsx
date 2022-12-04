@@ -2,8 +2,6 @@ import React from "react";
 
 export interface ICalenderBoxProps {
     value:string|number
-
-
 }
 
 const CalenderBox: React.FC<ICalenderBoxProps> = (props:any) => {
