@@ -8,7 +8,7 @@ const CalenderBox: React.FC<ICalenderBoxProps> = (props) => {
 
     return(
        <>
-           <div className="uppercase h-10 flex item-center justify-center">
+           <div className="uppercase h-10 flex item-center justify-center border border-gray-500">
                {props.value}
            </div>
        </>

@@ -11,7 +11,7 @@ const WeeklyWeekStatic1: React.FC<IWeeklyWeekStaticProps> = (props) => {
                 <div title="0000"
                      className="flex flex-col justify-center items-center border border-gray-500 h-16 bg-[#56C795]">
 
-                    <div title="0030" className=" w-full h-8 flex items-center justify-center -mb-2">
+                    <div title="1030" className=" w-full h-8 flex items-center justify-center -mb-2">
 
                     </div>
                 </div>
