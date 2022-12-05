@@ -14,10 +14,10 @@ const Calendar: React.FC<ICalendarProps> = () => {
         <>
             <CalendarH1 />
             <CalendarH2 />
-            <CalendarGridv2 />
-
             {/*First version, only static mockup. Uncomment below*/}
             {/*<CalendarGrid />*/}
+            <CalendarGridv2 />
+
         </>
     )
 }
