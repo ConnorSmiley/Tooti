@@ -1,6 +1,7 @@
 import React from "react";
 import WeeklyColumn from "./WeeklyColumn";
 import WeeklyColumnBoxNoBorder from "./WeeklyColumnBoxNoBorder";
+import WeeklyColumn2 from "./WeeklyColumn2";
 
 export interface IFullDayComponentProps {
 
@@ -16,6 +17,7 @@ const WeeklyColumnComponent: React.FC<IFullDayComponentProps> = () => {
                 </div>
                 <div className="flex flew-col w-full h-full">
                     <WeeklyColumn />
+                    {/*<WeeklyColumn2 />*/}
                 </div>
             </div>
 
